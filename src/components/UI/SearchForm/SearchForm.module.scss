@@ -1,0 +1,46 @@
+.serach-form {
+  position: relative;
+  width: 60%;
+}
+
+.serach-form__input {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  width: calc(100% - 14px);
+  background: #F9F9F9;
+  border: none;
+  border-radius: 16px;
+  height: 45px;
+  padding-left: 14px;
+  transition: all 0.4s ease-in-out;
+  outline: 0;
+  outline-offset: 0;
+  //cursor: pointer;
+
+  &::-webkit-input-placeholder {
+    color: #000;
+  }
+
+  &:focus {
+    background-color: #d0d0d0;
+  }
+
+  &:hover {
+    background-color: #d0d0d0;
+  }
+}
+
+/*.serach-form__loupe {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: center / contain no-repeat url(../../../../public/icons/loupe.png);
+  border: none;
+  top: 12px;
+  right: 36px;
+  cursor: pointer;
+}
+*/
