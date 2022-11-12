@@ -19,6 +19,7 @@ function Header() {
           Корзина
         </a>
       </Link>
+      <div className={styles['header__burger']}></div>
     </section>
   )
 }

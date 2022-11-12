@@ -13,6 +13,7 @@ function SearchForm() {
         id='search'
         name='search'
         className={styles['serach-form__input']} />
+        <div className={styles['serach-form__loupe']}></div>
     </form>
   )
 }

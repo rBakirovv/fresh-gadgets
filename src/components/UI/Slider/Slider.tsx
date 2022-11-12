@@ -8,6 +8,9 @@ function Slider({ sliderData }: SliderInterface) {
   const [offset, setOffset] = useState<number>(0);
   const [slideWidth, setSlideWidth] = useState<number>(0);
 
+  //const [setClickX, clickX] = useState<number>(0);
+  //const [dragX, serDragX] = useState<number>(0);
+
   const slideRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -24,6 +27,32 @@ function Slider({ sliderData }: SliderInterface) {
 
     return () => window.removeEventListener('resize', resizeHandler)
   }, [])
+
+  /*
+  useEffect(() => {
+    const startDrag = (evt: MouseEvent) => {
+      setClickX(evt.pageX);
+    }
+
+    window.addEventListener('pointerdown', startDrag)
+
+    return () => window.removeEventListener('pointerdown', startDrag)
+  })
+  */
+
+  /*
+  useEffect(() => {
+    const dragging = (evt: MouseEvent) => {
+      const dragX = evt.pageX;
+
+      console.log(dragX)
+    }
+
+    window.addEventListener('pointermove', dragging)
+
+    return () => window.removeEventListener('pointermove', dragging)
+  })
+  */
 
   function handleRightArrowClick() {
     setOffset((currentOffset) => {
@@ -96,7 +125,7 @@ function Slider({ sliderData }: SliderInterface) {
                   <h4 className={styles["slider__left-title"]}>{slide.title}</h4>
                   <p className={styles["slider__left-subtitle"]}>{slide.subtitle}</p>
                 </div>
-                <div className={`${styles["slider__side"]} ${styles["slider__right"]}`}>Здесь будет картинка</div>
+                <div className={`${styles["slider__side"]} ${styles["slider__right"]}`}></div>
               </div>
             )
           })
