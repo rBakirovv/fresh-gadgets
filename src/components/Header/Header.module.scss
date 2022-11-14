@@ -1,0 +1,66 @@
+.header {
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.header__icon-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header__icon {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+}
+
+.header__icon-title {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+  margin: 0;
+}
+
+.header__cart {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.header__cart-icon {
+  background-image: url('../../../public/icons/cart.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+}
+
+.header__burger {
+  display: none;
+  background-image: url('../../../public/icons/menu_hamburger.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 820px) {
+  .header__cart {
+    display: none;
+  }
+
+  .header__burger {
+    display: flex;
+  }
+}
