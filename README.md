@@ -2,3 +2,5 @@
  * Next.js
  * TypeScript
  * SASS
+
+![Пример работы](./src/videos/slider-video.gif)
