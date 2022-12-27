@@ -1,5 +1,5 @@
  ## :hammer_and_wrench: Стак технологий
- * Next.js
+ * React
  * TypeScript
  * SASS
 
